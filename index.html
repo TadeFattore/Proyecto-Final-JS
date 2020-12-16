@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Entrega Final</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo" id="titulo">Batalla de jugadores</h1>  
+    </header>
+    <div class="informacion">
+        <p>¡Hola! En esta página vas a crear un jugador de futbol y vas a batallar estadisticamente contra otro.</p>
+        <p>¿Estas listx para el enfrentamiento?</p>
+    </div>
+
+    <div class="botones-medio">
+        <button class="rainbow-button" id="mostrarForm">Si, estoy listx</button>
+        <button class="rainbow-button" id="ocultarForm">No</button>
+    </div>
+
+
+    <div class="espacio-grande" style="display: none;"> 
+        <div  class="box">
+            <div  class="formulario">
+                <form>
+                    <label><h3> Vamos a armar a tu jugador de futbol</h3></label>
+                    <label><p class="texto-form">¿Cual es el nombre de tu jugador?</p></label>
+                    <input type="text" class="form-control" id="nombreJugador" placeholder="Nombre Completo" required>     
+                    <label><p class="texto-form">¿A qué país representa?</p></label>
+                    <input type="text" class="form-control" id="equipoJugador" placeholder="País" required>
+                    <label><p class="texto-form">¿En que posición juega?</p></label>
+                    <Select class="form-control" id="posicionJugador">
+                        <option value="arquero">Arquero</option>
+                        <option value="defensor">Defensor</option>
+                        <option value="mediocampista">Mediocampista</option>
+                        <option value="delantero">Delantero</option>
+                    </Select>       
+                </form>
+                <br>
+                <button class="rainbow-button" id="btn1">Crear jugador</button>
+                <div class="mostrar-informacion-jugador">
+                    <p id="informacion-jugador" class="informacion-jugador"></p>
+                </div>
+            </div>
+            <div class="versus">
+                <p class="vs"><strong>VS</strong></p>
+                <br>
+                <div class="center">
+                    <a href="#resultado"><button class="rainbow-button" id="btn2">¡A luchar!</button></a>
+                </div>
+            </div>
+            <div class='segundoForm'>
+                <form>
+                    <label><h3>Ahora vamos a elegir a un jugador al azar</h3></label>
+                    <div>
+                        <label class='text-form-2'>Decinos un número del 1 al 500</label>
+                        <br>
+                        <input id="IdJugador" type="number" min="1" max="500"  required>
+                    </div>
+                    <div class="botonForm2">
+                        <button class="rainbow-button" id="btn3" onclick="return ConsultarAPI()">
+                            Buscar jugador</button>
+                    </div>
+                </form>
+                <br>
+                <div  id="dataJugador" class='dataJugador'>
+                    <label><p class='text-form-2'>El nombre del jugador es:</p></label>
+                    <input id="nombre" readonly>  
+                    <br>
+                    <label><p class='text-form-2'>Representa al país:</p></label>
+                    <input id="pais" readonly>
+                    <label><p class='text-form-2'>Y su posición es:</p></label>
+                    <input id="position" readonly>
+                </div>
+                <div class="mostrar-informacion-jugador">
+                    <p id="informacion-jugador-2" class="informacion-jugador"></p>
+                </div>
+            </div>
+        </div>
+
+        <a name="resultado" id="resultado"></a> 
+        <div class="pelea" id="pelea" style="display: none;">
+            <div class="row">
+                <div class="column">
+                    <div class="jugadorCreado">
+                        <p id="stats-jugador-1"></p>
+                    </div>
+                </div>
+                <div class="column">    
+                    <div class="boton-resultado">
+                        <button class="rainbow-button" id="btn4" onclick="resultadoPelea()">Ver resultado</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="jugadorAlAzar">
+                        <p id="stats-jugador-2"></p>
+                    </div>
+                </div>
+            </div>
+        </diV>
+    </div>
+
+
+<footer></footer>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

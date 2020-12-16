@@ -1,0 +1,158 @@
+body{
+    background-color: black;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 2.8vw;
+}
+.informacion{
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+
+}
+
+h3{
+    font-size: 2.5vw;
+}
+
+h5{
+    font-size: 2.5vw;
+}
+
+.texto-form{
+    font-size: 1.5vw;
+}
+
+.text-form-2{
+    font-size: 1.5vw;
+}
+
+.box {
+    display: flex;
+    align-self: center;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border: white;
+    border-style: solid;
+
+    padding-left: 1em;
+    padding-top: 1em;   
+    padding-bottom: 1em;
+    padding-right: 1em;
+    background-image: url('../img/pelea.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.formulario{
+    flex-grow: 4;
+    flex-basis: auto;
+    text-align: center;
+
+    padding-bottom: 1em;
+}
+.versus{
+    flex-grow: 1;
+    flex-basis: auto;
+    align-self: center;
+
+    padding-bottom: 1em;
+}
+
+.segundoForm{
+    flex-grow: 4;
+    flex-basis: auto;
+    text-align: center;
+
+    padding-bottom: 1em;
+}
+.vs{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+
+.botonForm2{
+    margin-top: 5px;
+}
+.botones-medio{
+    text-align: center;
+}
+.titulo{
+    color: white;
+}
+
+.rainbow-button {
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:1px;
+    
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:1vw;
+    font-weight:bold;
+}
+.rainbow-button:after {
+    content:attr(alt);
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+    to {
+      background-position:6.66vw;
+    }
+}
+
+.mostrar-informacion-jugador{
+    text-align: center;
+    width: 20em;
+    padding-left: 6.3em;
+}
+.informacion-jugador{
+    font-size: 1.3vw;
+    font-weight: 200;
+}
+
+.pelea{
+    display: flex;
+    background-color: white;
+    color: black;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 1em;   
+    padding-bottom: 1em;
+    padding-right: 1em;   
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+}
